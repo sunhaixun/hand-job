@@ -1,0 +1,60 @@
+extends layout
+
+block content
+	//start applist
+	div#page_contact(class=['column', 'clear'])
+		div#user-profile(class=['icon i-dropdown-b-1','show-droplist','droplist-handle'])
+			|	sunhaixun00
+			ul(class='droplist')
+				li
+					a(href='#')
+						|	退出
+		div#select-lang(class=['icon','show-droplist','i-dropdown-b-1','droplist-handle'])
+			|	语言
+			ul.droplist
+				li
+					a(href='#') English
+				li
+					a(href='#') 简体中文
+		div.column_3_1
+			div.column_hd
+				h1#logo
+					a(href='#') 空间
+				div#nav
+					h2#current-app(class=['icon','i-dropdown-g-1']) 联系人
+					ul#extra-apps(class='droplist')
+						li
+							a(href='#') 联系人
+						li
+							a(href='#') 信息
+						li
+							a(href='#') 通话记录
+						li
+							a(href='#') 相册
+						li
+							a(href='#') 便签
+			div.column_bd
+				ui#contact-group-list
+
+			div.column_ft
+				div#recycle(class='moudle_recycle') 回收站
+				div#add_entry(class=['icon-xl','show-droplist','i-tip','i-add'])
+					ul.droplist
+						li
+							a#new-group-entry(href='#add-group') 新建分组
+						li
+							a#new-contact-entry(href='#add-contact') 新建联系人
+					i 新建
+				div#more_entry(class=['icon-xl','show-droplist','i-tip','i-more'])
+					ul.droplist
+						li
+							a#new-group-entry(href='#add-group') 新建分组
+						li
+							a#new-contact-entry(href='#add-contact') 新建联系人
+					i 更多
+
+		div.column_3_2
+	script(src='/javascripts/lib/require.js',type='text/javascript')
+	script(src='/javascripts/js/config.js',type='text/javascript')
+	script(src='/javascripts/js/contact.js',type='text/javascript')
+	

@@ -1,0 +1,45 @@
+extends layout
+
+block content
+	//start applist
+	div#page_applist(style={display:'block'})
+		h1#hd 云空间
+		div#user-profile(class=['icon','show-droplist'])
+			| sunhaixun00
+			ul.droplist
+				li
+					a(href='#',aria-label='退出')
+						| 退出
+		div#select-lang(class=['icon','show-droplist']) 语言
+			ul(class='droplist')
+				li
+					a(href='#',data-lang='en_US') English
+				li
+					a(href='#',data-lang='zh_CN') 简体中文
+				li
+					a(href='#',data-lang='en_TW') 繁體中文
+		ul#nav_inter.clear
+			li.contact
+				a(href='#')
+					span 联系人
+					span 2
+			li.message
+				a(href='#')
+					span 信息
+					span 2
+			li.call
+				a(href='#')
+					span 通话记录
+					span 2
+			li.album
+				a(href='#')
+					span 相册
+					span 2
+			li.note
+				a(href='#')
+					span 便签
+					span 2
+	script(src='/javascripts/lib/require.js',type='text/javascript')
+	script(src='/javascripts/js/config.js',type='text/javascript')
+	script(src='/javascripts/js/index.js',type='text/javascript')
+
